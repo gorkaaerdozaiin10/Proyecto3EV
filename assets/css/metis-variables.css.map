@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../src/scss/metis/metis-variables.scss"
+    ],
+    "names": [],
+    "file": "metis-variables.css"
+}
