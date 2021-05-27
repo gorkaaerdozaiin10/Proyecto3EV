@@ -6,15 +6,20 @@
 	<link rel="stylesheet" href="../../public/css/bulma/bulma.min.css">
 </head>
 <body id="formularioBody">
+	
+	
+	
 	<div id="formulario" >
-		<div class="field">
+		<div class="columns">
+		
+		<div class="field column">
 		  <label class="label">Nombre Completo</label>
 		  <div class="control">
 		    <input class="input"  name="nombre" id="nombre" type="text" placeholder="Introduzca su nombre completo">
 		  </div>
 		</div>
 
-		<div class="field" >
+		<div class="field column" >
 		  <label class="label">Teléfono</label>
 		  <div class="control has-icons-left has-icons-right">
 		    <input class="input " id="telefono" name="telefono"  type="text" placeholder="Introduzca su número de Teléfono" value="">
@@ -27,6 +32,7 @@
 		  </div>
 		  <p  class="help is-danger txtErrores" ></p>
 		</div>
+	</div>
 
 		<div class="field"  >
 		  <label class="label">Email</label>
@@ -42,7 +48,8 @@
 		  <p class="help is-danger txtErrores"></p>
 		</div>
 
-		<div class="field">
+		<div class="columns">
+		<div class="field column">
 			<label class="label">¿Cómo es su vivienda?</label>
 			<div class="control" id="vivienda">
 			  <label class="radio has-text-black">
@@ -72,8 +79,8 @@
 			</div>
 		</div>
 
-
-		<div class="field" >
+		
+		<div class="field column" >
 			<label class="label">¿TIENES MÁS GATO?</label>
 			<div class="control" id="gato">
 			  <label class="radio has-text-black">
@@ -86,7 +93,7 @@
 			  </label>
 			</div>
 		</div>
-
+	</div>
 		<div class="field" >
 			<label class="label">¿LO VACUNARIAS?</label>
 			<div class="control" id="vacuna">
