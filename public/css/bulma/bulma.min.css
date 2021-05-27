@@ -8236,6 +8236,14 @@ a.has-text-link-dark:focus {
   color:  #b072e9 !important;
 }
 
+.has-text-morados {
+  color: black;
+}
+.has-text-morados:hover {
+  color:  #b072e9 !important;
+}
+
+
 .has-text-info {
   color: #60a5fa !important;
 }
