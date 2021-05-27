@@ -8,6 +8,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* @media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -496,6 +503,10 @@ table th {
   color: #475569;
   display: block;
   padding: 1.25rem;
+  transition: 0.5s ease all;
+}
+.box:hover {
+  transform: scale(1.05);
 }
 a.box:hover,
 a.box:focus {
@@ -10689,4 +10700,23 @@ a.has-text-danger-dark:focus {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+
+/*
+CSS PERSONALIZADO*/
+
+.oculto{
+  opacity: 0;
+}
+#formulario{
+  position: relative;
+  margin: auto;
+  width: 40%;
+  padding: 2%;
+  background-color: rgba(231, 149, 241, 0.363);
+  border-radius: 4%;
+}
+#formularioBody{
+  height: 100%;
 }
