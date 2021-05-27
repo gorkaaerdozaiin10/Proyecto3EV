@@ -11,6 +11,17 @@ const expresiones = {
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{9}$/ // 7 a 14 numeros.
 }
+/*
+const campos={
+	nombre: true,
+	telefono:true,
+	correo:true,
+	vivienda:true,
+	gatos:true,
+	vacuna:true
+}
+
+*/
 const campos={
 	nombre: false,
 	telefono:false,
@@ -19,6 +30,7 @@ const campos={
 	gatos:false,
 	vacuna:false
 }
+
 	const validarFormulario = e => {
 		switch (e.target.name) {
 			case "nombre":
@@ -105,9 +117,15 @@ submit.addEventListener('click',(e)=>{
 		}
 	});
 
+	var mensajeError=document.getElementById('errorBox');
+	var modal1=document.getElementById('pop');
+
 	if (campos.nombre && campos.telefono && campos.correo && campos.vivienda && campos.gatos && campos.vacuna) {
-		console.log("ENTREEE")	
+		mensajeError.classList.add('oculto');
+		modal1.classList.add('is-active');
+
 	} else {
-		console.log("GILIPOLLAS")
+		mensajeError.classList.remove('oculto');
+
 	}
 })
