@@ -8216,6 +8216,9 @@ a.has-text-link-dark:focus {
   color: #07d2df !important;
   transition: 0.2s;
 }
+.has-text-morado {
+  color:  #b072e9 !important;
+}
 
 .has-text-info {
   color: #60a5fa !important;
