@@ -532,7 +532,6 @@ a.box:active {
 }
 .button:hover,
 .button.is-hovered {
-  border-color: #b5b5b5;
   color: #363636;
 }
 .button:focus,
@@ -1163,6 +1162,9 @@ fieldset[disabled] .button.is-link.is-inverted {
   background-color: transparent;
   border-color: #a855f7;
   color: #a855f7;
+}
+.button.is-logo:hover{
+  color: blue;
 }
 .button.is-link.is-outlined:hover,
 .button.is-link.is-outlined.is-hovered,
