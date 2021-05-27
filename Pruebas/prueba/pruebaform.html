@@ -8,16 +8,16 @@
 <body>
 	<div id="formulario">
 		<div class="field">
-		  <label class="label">Name</label>
+		  <label class="label">Nombre Completo</label>
 		  <div class="control">
-		    <input class="input"  name="nombre" id="nombre" type="text" placeholder="Text input">
+		    <input class="input"  name="nombre" id="nombre" type="text" placeholder="Introduzca su nombre completo">
 		  </div>
 		</div>
 
 		<div class="field" >
-		  <label class="label">Username</label>
+		  <label class="label">Teléfono</label>
 		  <div class="control has-icons-left has-icons-right">
-		    <input class="input is-success" id="Usuario" name="usuario"  type="text" placeholder="Text input" value="bulma">
+		    <input class="input " id="telefono" name="telefono"  type="text" placeholder="Introduzca su número de Teléfono" value="">
 		    <span class="icon is-small is-left">
 		      <i class="fas fa-user"></i>
 		    </span>
@@ -31,7 +31,7 @@
 		<div class="field"  >
 		  <label class="label">Email</label>
 		  <div class="control has-icons-left has-icons-right">
-		    <input class="input is-danger" id="correo" type="email" name="correo"  placeholder="Email input" value="hello@">
+		    <input class="input " id="correo" type="email" name="correo"  placeholder="Email input" value="hello@">
 		    <span class="icon is-small is-left">
 		      <i class="fas fa-envelope"></i>
 		    </span>
@@ -43,19 +43,64 @@
 		</div>
 
 		<div class="field">
-		  <label class="label">Subject</label>
-		  <div class="control">
-		    <div class="select">
-		      <select>
-		        <option>Select dropdown</option>
-		        <option>With options</option>
-		      </select>
-		    </div>
+			<label class="label">¿Cómo es su vivienda?</label>
+			<div class="control" id="vivienda">
+			  <label class="radio">
+				<input type="radio" name="question">
+				Un piso sin acceso al exterior
+			  </label>
+			  <br>
+			  <label class="radio">
+				<input type="radio" name="question">
+				Un piso con balcón
+			  </label>
+			  <br>
+			  <label class="radio">
+				<input type="radio" name="question">
+				Un piso sin balcón
+			  </label>
+			  <br>
+			  <label class="radio">
+				<input type="radio" name="question">
+				Una casa sin Jardín
+			  </label>
+			  <br>
+			  <label class="radio">
+				<input type="radio" name="question">
+				Una casa con Jardín
+			  </label>
+			</div>
 		  </div>
 		</div>
+		<div class="field" >
+			<label class="label">¿TIENES MÁS GATO?</label>
+			<div class="control" id="gato">
+			  <label class="radio">
+				<input type="radio" name="question">
+				Yes
+			  </label>
+			  <label class="radio">
+				<input type="radio" name="question">
+				No
+			  </label>
+			</div>
+		</div>
+		  <div class="field" >
+			<label class="label">¿LO VACUNARIAS?</label>
+			<div class="control" id="vacuna">
+			  <label class="radio">
+				<input type="radio" name="question">
+				Yes
+			  </label>
+			  <label class="radio">
+				<input type="radio" name="question">
+				No
+			  </label>
+			</div>
+		  </div>
 
 		<div class="field">
-		  <label class="label">Message</label>
+		  <label class="label">RAZON PARA ADOPTAR</label>
 		  <div class="control">
 		    <textarea class="textarea" placeholder="Textarea"></textarea>
 		  </div>
@@ -70,22 +115,11 @@
 		  </div>
 		</div>
 
-		<div class="field">
-		  <div class="control">
-		    <label class="radio">
-		      <input type="radio" name="question">
-		      Yes
-		    </label>
-		    <label class="radio">
-		      <input type="radio" name="question">
-		      No
-		    </label>
-		  </div>
-		</div>
+	
 
 		<div class="field is-grouped">
 		  <div class="control">
-		    <button class="button is-link">Submit</button>
+		    <button class="button is-link" id="enviar">Submit</button>
 		  </div>
 		  <div class="control">
 		    <button class="button is-link is-light">Cancel</button>
