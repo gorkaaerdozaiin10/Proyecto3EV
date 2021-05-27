@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -1163,8 +1173,8 @@ fieldset[disabled] .button.is-link.is-inverted {
   border-color: #a855f7;
   color: #a855f7;
 }
-.button.is-logo-f:hover{
-  color: #339AF0;
+.button.is-logo-f:hover {
+  color: #339af0;
 }
 .button.is-link.is-outlined:hover,
 .button.is-link.is-outlined.is-hovered,
@@ -8217,31 +8227,30 @@ a.has-text-link-dark:focus {
   background-color: #700ad1 !important;
 }
 /*Variables color rss*/
-.has-text-gris-f{
-  color: #CBD5E1 !important;
-  transition: .2s;
+.has-text-gris-f {
+  color: #cbd5e1 !important;
+  transition: 0.2s;
 }
-.has-text-gris-f:hover{
+.has-text-gris-f:hover {
   color: #0768df !important;
-  transition: .2s;
+  transition: 0.2s;
 }
-.has-text-gris-i{
-  color: #CBD5E1 !important;
-  transition: .2s;
+.has-text-gris-i {
+  color: #cbd5e1 !important;
+  transition: 0.2s;
 }
-.has-text-gris-i:hover{
-  color: #E1306C !important;
-  transition: .2s;
+.has-text-gris-i:hover {
+  color: #e1306c !important;
+  transition: 0.2s;
 }
-.has-text-gris-t{
-  color: #CBD5E1 !important;
-  transition: .2s;
+.has-text-gris-t {
+  color: #cbd5e1 !important;
+  transition: 0.2s;
 }
-.has-text-gris-t:hover{
-  color: #07D2DF !important;
-  transition: .2s;
+.has-text-gris-t:hover {
+  color: #07d2df !important;
+  transition: 0.2s;
 }
-
 
 .has-text-info {
   color: #60a5fa !important;
