@@ -225,7 +225,7 @@
   position: relative;
   vertical-align: top;
 }
-.button:focus,
+
 .input:focus,
 .textarea:focus,
 .select select:focus,
@@ -534,26 +534,7 @@ a.box:active {
 .button.is-hovered {
   color: #363636;
 }
-.button:focus,
-.button.is-focused {
-  border-color: #3273dc;
-  color: #363636;
-}
-.button:focus:not(:active),
-.button.is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(168, 85, 247, 0.25);
-}
-.button:active,
-.button.is-active {
-  border-color: #4a4a4a;
-  color: #363636;
-}
-.button.is-text {
-  background-color: transparent;
-  border-color: transparent;
-  color: #475569;
-  text-decoration: underline;
-}
+
 .button.is-text:hover,
 .button.is-text.is-hovered,
 .button.is-text:focus,
@@ -1162,6 +1143,7 @@ fieldset[disabled] .button.is-link.is-inverted {
   background-color: transparent;
   border-color: #a855f7;
   color: #a855f7;
+  transition: 0.2s;
 }
 .button.is-logo-f:hover{
   color: #339AF0;
@@ -1173,6 +1155,7 @@ fieldset[disabled] .button.is-link.is-inverted {
   background-color: #a855f7;
   border-color: #a855f7;
   color: #fff;
+  transition: 0.2s;
 }
 .button.is-link.is-outlined.is-loading::after {
   border-color: transparent transparent #a855f7 #a855f7 !important;
@@ -1189,6 +1172,7 @@ fieldset[disabled] .button.is-link.is-outlined {
   border-color: #a855f7;
   box-shadow: none;
   color: #a855f7;
+  transition: 0.2s;
 }
 .button.is-link.is-inverted.is-outlined {
   background-color: transparent;
@@ -1201,6 +1185,7 @@ fieldset[disabled] .button.is-link.is-outlined {
 .button.is-link.is-inverted.is-outlined.is-focused {
   background-color: #fff;
   color: #a855f7;
+  transition: 0.2s;
 }
 .button.is-link.is-inverted.is-outlined.is-loading:hover::after,
 .button.is-link.is-inverted.is-outlined.is-loading.is-hovered::after,
@@ -1355,22 +1340,21 @@ fieldset[disabled] .button.is-info.is-inverted.is-outlined {
   background-color: #b87ddf;
   border-color: transparent;
   color: #fff;
+  transition: 0.2s;
 }
 .button.is-success:hover,
 .button.is-success.is-hovered {
   background-color: #b87ddf;
   border-color: transparent;
   color: #fff;
+  transition: 0.2s;
 }
 .button.is-success:focus,
 .button.is-success.is-focused {
   border-color: transparent;
   color: #fff;
 }
-.button.is-success:focus:not(:active),
-.button.is-success.is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(34, 197, 94, 0.25);
-}
+
 .button.is-success:active,
 .button.is-success.is-active {
   background-color: #b87ddf;
@@ -1408,7 +1392,6 @@ fieldset[disabled] .button.is-success.is-inverted {
 }
 .button.is-success.is-outlined:hover,
 .button.is-success.is-outlined.is-hovered,
-.button.is-success.is-outlined:focus,
 .button.is-success.is-outlined.is-focused {
   background-color: #b87ddf;
   border-color: #b87ddf;
@@ -3149,16 +3132,7 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 .is-success.textarea {
   border-color: #b87ddf;
 }
-.is-success.input:focus,
-.is-success.textarea:focus,
-.is-success.is-focused.input,
-.is-success.is-focused.textarea,
-.is-success.input:active,
-.is-success.textarea:active,
-.is-success.is-active.input,
-.is-success.is-active.textarea {
-  box-shadow: 0 0 0 0.125em rgba(34, 197, 94, 0.25);
-}
+
 .is-warning.input,
 .is-warning.textarea {
   border-color: #fbbf24;
@@ -3433,12 +3407,7 @@ fieldset[disabled] .select select:hover {
 .select.is-success select.is-hovered {
   border-color: #1eaf54;
 }
-.select.is-success select:focus,
-.select.is-success select.is-focused,
-.select.is-success select:active,
-.select.is-success select.is-active {
-  box-shadow: 0 0 0 0.125em rgba(34, 197, 94, 0.25);
-}
+
 .select.is-warning:not(:hover)::after {
   border-color: #fbbf24;
 }
@@ -3682,12 +3651,6 @@ fieldset[disabled] .select select:hover {
 .file.is-success.is-hovered .file-cta {
   background-color: #20ba59;
   border-color: transparent;
-  color: #fff;
-}
-.file.is-success:focus .file-cta,
-.file.is-success.is-focused .file-cta {
-  border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(34, 197, 94, 0.25);
   color: #fff;
 }
 .file.is-success:active .file-cta,
@@ -5193,6 +5156,7 @@ button.dropdown-item.is-active {
   .navbar.is-link .navbar-dropdown a.navbar-item.is-active {
     background-color: #a855f7;
     color: #fff;
+    transition: 0.2s;
   }
 }
 .navbar.is-info {
@@ -5557,6 +5521,7 @@ a.navbar-item.is-active,
 .navbar-link.is-active {
   background-color: #f9fafb;
   color: #a855f7;
+  transition: 0.2s;
 }
 .navbar-item {
   flex-grow: 0;
