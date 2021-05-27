@@ -25,13 +25,13 @@
 		      <i class="fas fa-check"></i>
 		    </span>
 		  </div>
-		  <p class="help is-success">This username is available</p>
+		  <p  class="help is-danger txtErrores" ></p>
 		</div>
 
 		<div class="field"  >
 		  <label class="label">Email</label>
 		  <div class="control has-icons-left has-icons-right">
-		    <input class="input " id="correo" type="email" name="correo"  placeholder="Email input" value="hello@">
+		    <input class="input " id="correo" type="email" name="correo"  placeholder="Introduzca su correo" value="">
 		    <span class="icon is-small is-left">
 		      <i class="fas fa-envelope"></i>
 		    </span>
@@ -39,7 +39,7 @@
 		      <i class="fas fa-exclamation-triangle"></i>
 		    </span>
 		  </div>
-		  <p class="help is-danger">This email is invalid</p>
+		  <p class="help is-danger txtErrores"></p>
 		</div>
 
 		<div class="field">
@@ -76,11 +76,11 @@
 			<label class="label">¿TIENES MÁS GATO?</label>
 			<div class="control" id="gato">
 			  <label class="radio">
-				<input type="radio" name="question">
+				<input type="radio" name="question1">
 				Yes
 			  </label>
 			  <label class="radio">
-				<input type="radio" name="question">
+				<input type="radio" name="question1">
 				No
 			  </label>
 			</div>
@@ -89,11 +89,11 @@
 			<label class="label">¿LO VACUNARIAS?</label>
 			<div class="control" id="vacuna">
 			  <label class="radio">
-				<input type="radio" name="question">
+				<input type="radio" name="question2">
 				Yes
 			  </label>
 			  <label class="radio">
-				<input type="radio" name="question">
+				<input type="radio" name="question2">
 				No
 			  </label>
 			</div>
@@ -102,17 +102,12 @@
 		<div class="field">
 		  <label class="label">RAZON PARA ADOPTAR</label>
 		  <div class="control">
-		    <textarea class="textarea" placeholder="Textarea"></textarea>
+		    <textarea class="textarea" placeholder="Introduzca las razones por las que quiere adoptar un gatito. (Opcional)"></textarea>
 		  </div>
 		</div>
 
-		<div class="field">
-		  <div class="control">
-		    <label class="checkbox">
-		      <input type="checkbox">
-		      I agree to the <a href="#">terms and conditions</a>
-		    </label>
-		  </div>
+		<div class="box has-background-danger has-text-white">
+			<p>Rellene correctamente el formulario</p>
 		</div>
 
 	
@@ -121,9 +116,7 @@
 		  <div class="control">
 		    <button class="button is-link" id="enviar">Submit</button>
 		  </div>
-		  <div class="control">
-		    <button class="button is-link is-light">Cancel</button>
-		  </div>
+
 		</div>
 	</div>
 		<script type="text/javascript" src="./prueba.js"></script>
