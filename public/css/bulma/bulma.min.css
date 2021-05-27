@@ -10698,3 +10698,22 @@ a.has-text-danger-dark:focus {
     flex-direction: column-reverse;
   }
 }
+
+
+/*
+CSS PERSONALIZADO*/
+
+.oculto{
+  opacity: 0;
+}
+#formulario{
+  position: relative;
+  margin: auto;
+  width: 40%;
+  padding: 2%;
+  background-color: rgba(231, 149, 241, 0.363);
+  border-radius: 4%;
+}
+#formularioBody{
+  height: 100%;
+}
