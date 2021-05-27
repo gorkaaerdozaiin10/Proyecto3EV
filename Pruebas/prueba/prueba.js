@@ -11,7 +11,7 @@ const expresiones = {
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{9}$/ // 7 a 14 numeros.
 }
-/*
+
 const campos={
 	nombre: true,
 	telefono:true,
@@ -21,7 +21,7 @@ const campos={
 	vacuna:true
 }
 
-*/
+/*
 const campos={
 	nombre: false,
 	telefono:false,
@@ -30,6 +30,7 @@ const campos={
 	gatos:false,
 	vacuna:false
 }
+*/
 
 	const validarFormulario = e => {
 		switch (e.target.name) {

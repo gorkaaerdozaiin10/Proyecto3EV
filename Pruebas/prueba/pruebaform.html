@@ -10,33 +10,33 @@
 	
 	
 	<div id="formulario" >
-		<div class="columns">
 		
-		<div class="field column">
-		  <label class="label">Nombre Completo</label>
-		  <div class="control">
-		    <input class="input"  name="nombre" id="nombre" type="text" placeholder="Introduzca su nombre completo">
-		  </div>
-		</div>
+		<div class="columns">
+			<div class="field column">
+			<label class="label">Nombre Completo</label>
+			<div class="control">
+				<input class="input"  name="nombre" id="nombre" type="text" placeholder="Introduzca su nombre completo">
+			</div>
+			</div>
 
-		<div class="field column" >
-		  <label class="label">Teléfono</label>
-		  <div class="control has-icons-left has-icons-right">
-		    <input class="input " id="telefono" name="telefono"  type="text" placeholder="Introduzca su número de Teléfono" value="">
-		    <span class="icon is-small is-left">
-		      <i class="fas fa-user"></i>
-		    </span>
-		    <span class="icon is-small is-right">
-		      <i class="fas fa-check"></i>
-		    </span>
-		  </div>
-		  <p  class="help is-danger txtErrores" ></p>
+			<div class="field column" >
+			<label class="label">Teléfono</label>
+			<div class="control  has-icons-right">
+				<input class="input " id="telefono" name="telefono"  type="text" placeholder="Introduzca su número de Teléfono" value="">
+				<span class="icon is-small is-left">
+				<i class="fas fa-user"></i>
+				</span>
+				<span class="icon is-small is-right">
+				<i class="fas fa-check"></i>
+				</span>
+			</div>
+			<p  class="help is-danger txtErrores" ></p>
+			</div>
 		</div>
-	</div>
 
 		<div class="field"  >
 		  <label class="label">Email</label>
-		  <div class="control has-icons-left has-icons-right">
+		  <div class="control  has-icons-right">
 		    <input class="input " id="correo" type="email" name="correo"  placeholder="Introduzca su correo" value="">
 		    <span class="icon is-small is-left">
 		      <i class="fas fa-envelope"></i>
@@ -49,65 +49,66 @@
 		</div>
 
 		<div class="columns">
-		<div class="field column">
-			<label class="label">¿Cómo es su vivienda?</label>
-			<div class="control" id="vivienda">
-			  <label class="radio has-text-black">
-				<input type="radio" name="question">
-				Un piso sin acceso al exterior
-			  </label>
-			  <br>
-			  <label class="radio has-text-black">
-				<input type="radio" name="question">
-				Un piso con balcón
-			  </label>
-			  <br>
-			  <label class="radio has-text-black">
-				<input type="radio" name="question">
-				Un piso sin balcón
-			  </label>
-			  <br>
-			  <label class="radio has-text-black">
-				<input type="radio" name="question">
-				Una casa sin Jardín
-			  </label>
-			  <br>
-			  <label class="radio has-text-black">
-				<input type="radio" name="question">
-				Una casa con Jardín
-			  </label>
+			<div class="field column is-half" >
+				<label class="label">¿Cómo es su vivienda?</label>
+				<div class="control" id="vivienda">
+					<label class="radio has-text-black">
+						<input type="radio" name="question">
+						Un piso sin acceso al exterior
+					</label>
+					<br>
+					<label class="radio has-text-black">
+						<input type="radio" name="question">
+						Un piso con balcón
+					</label>
+					<br>
+					<label class="radio has-text-black">
+						<input type="radio" name="question">
+						Un piso sin balcón
+					</label>
+					<br>
+					<label class="radio has-text-black">
+						<input type="radio" name="question">
+						Una casa sin Jardín
+					</label>
+					<br>
+					<label class="radio has-text-black">
+						<input type="radio" name="question">
+						Una casa con Jardín
+					</label>
+				</div>
 			</div>
-		</div>
+			<div>
+				<div class="field column" >
+					<label class="label">¿Tienes más gatos?</label>
+					<div class="control" id="gato">
+						<label class="radio has-text-black">
+							<input type="radio" name="question1">
+							Yes
+						</label>
+						<label class="radio has-text-black">
+							<input type="radio" name="question1">
+							No
+						</label>
+					</div>
+				</div>
+			
 
-		
-		<div class="field column" >
-			<label class="label">¿TIENES MÁS GATO?</label>
-			<div class="control" id="gato">
-			  <label class="radio has-text-black">
-				<input type="radio" name="question1">
-				Yes
-			  </label>
-			  <label class="radio has-text-black">
-				<input type="radio" name="question1">
-				No
-			  </label>
+				<div class="field column" >
+					<label class="label">¿Lo vacunarías?</label>
+					<div class="control" id="vacuna">
+					<label class="radio has-text-black">
+						<input  type="radio" name="question2">
+						Yes
+					</label>
+					<label class="radio has-text-black">
+						<input type="radio" name="question2">
+						No
+					</label>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-		<div class="field" >
-			<label class="label">¿LO VACUNARIAS?</label>
-			<div class="control" id="vacuna">
-			  <label class="radio has-text-black">
-				<input  type="radio" name="question2">
-				Yes
-			  </label>
-			  <label class="radio has-text-black">
-				<input type="radio" name="question2">
-				No
-			  </label>
-			</div>
-		</div>
-
 		<div class="field">
 		  <label class="label">RAZON PARA ADOPTAR</label>
 		  <div class="control">
@@ -128,20 +129,16 @@
 		</div>	
 	</div>
 
-	<div class="modal" id="pop">
+	<div class="modal pagination-list" id="pop">
 		<div class="modal-background"></div>
 		<div class="modal-content">
 			<div class="box">
-				<article class="media">
-				  <div class="media-left">
-					<figure class="image is-64x64">
-					  <img src="./ok.png" alt="Image">
-					</figure>
-				  </div>
+				
 				  <div class="media-content">
 					<div class="content">
 					  <p>
 						<h3>CORRECTO</h3>
+						<img src="./ok.png" alt="image" class=" is-96x96" id="fotoOK">
 						<br>
 						Sus datos se han enviado correctamente. Recibira un correo nuestro en unos dias. Gracias por sus espera :)
 					  </p>
