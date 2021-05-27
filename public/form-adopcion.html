@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Formulario</title>
-	<link rel="stylesheet" href="../../public/css/bulma/bulma.min.css">
+	<link rel="stylesheet" href="./css/bulma/bulma.min.css">
+	<link rel="icon" href="favicon.ico">
+
 </head>
 <body id="formularioBody">
 	
@@ -123,13 +125,16 @@
 
 		<div class="field is-grouped">
 		  <div class="control">
+			  
 		    <button class="button is-link" id="enviar">Submit</button>
+			<a href="./index.html"> <button class="button is-white" id="cerrar"> Cancelar</button></a>
+
 		  </div>
 
 		</div>	
 	</div>
 
-	<div class="modal pagination-list" id="pop">
+	<div class="modal centrar" id="pop">
 		<div class="modal-background"></div>
 		<div class="modal-content">
 			<div class="box">
@@ -138,11 +143,11 @@
 					<div class="content">
 					  <p>
 						<h3>CORRECTO</h3>
-						<img src="./ok.png" alt="image" class=" is-96x96" id="fotoOK">
+						<img src="./metis-assets/fotoForm/ok.png" alt="image" class=" is-96x96" id="fotoOK">
 						<br>
 						Sus datos se han enviado correctamente. Recibira un correo nuestro en unos dias. Gracias por sus espera :)
 					  </p>
-					  <button class="button is-link" id="cerrar">Vale!</button>
+					  <a href="./index.html"> <button class="button is-link" id="cerrar"> Vale!</button></a>
 
 					</div>
 					<nav class="level is-mobile">
@@ -172,6 +177,6 @@
 		</div>
 	  </div>
 
-	<script type="text/javascript" src="./prueba.js"></script>
+	<script type="text/javascript" src="./js/form.js"></script>
 </body>
 </html>
